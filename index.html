@@ -1,0 +1,10 @@
+<script>
+const target = "obsidian://open" + location.search
+
+window.location.href = target
+
+setTimeout(() => {
+  document.body.innerHTML =
+    '<a href="'+target+'">Click here if Obsidian did not open</a>'
+}, 1000)
+</script>
